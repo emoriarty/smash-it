@@ -1,0 +1,33 @@
+.home, .score {
+  background: url(/images/home-background.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+  color: white;
+
+	.wrapper {
+		height: calc(100% - 4rem);
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+}
+
+.score {
+  .mainHeader {
+    .glassSphere {
+      border-radius: 9rem;
+      font-size: 6rem;
+      padding: 4rem 3rem;
+    }
+  }
+}
+
+.scoreTitle, .scoreResult {
+  margin: 0;
+
+}
+
+.scoreTitle {
+  font-size: 0.3em;
+}

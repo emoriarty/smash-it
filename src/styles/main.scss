@@ -1,0 +1,252 @@
+// bower:scss
+// endbower
+
+@import 'defaults';
+@import 'colors';
+@import 'buttons';
+@import 'animations';
+@import 'pages';
+@import 'texts';
+
+// Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before, 
+.clearfix:after { 
+  content: ' '; 
+  display: table; 
+}
+
+.clearfix:after { 
+  clear: both; 
+}
+
+body {
+  background: #fafafa;
+  color: $fg;
+  font-family: "GIRegular", Helvetica, Arial, sans-serif;
+}
+
+button { text-transform: uppercase; }
+
+.wrapper {
+  margin: 2rem;
+}
+
+.logo {
+  background: url('/images/sky-movies-logo.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 28px;
+  width: 160px;
+}
+
+.browsehappy {
+  background: #ccc;
+  color: #000;
+  margin: .2em 0;
+  padding: .2em 0;
+}
+
+.pt-perspective {
+  height: 100%;
+  perspective: 1200px;
+  position: relative;
+  width: 100%;
+}
+
+#pages {
+  section {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .pt-page-current,
+  .no-js .pt-page {
+    visibility: visible;
+    z-index: 1;
+  }
+}
+
+
+video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+canvas#canvas {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.brussel {
+  background: url(/images/brussel_sprout.png) no-repeat;
+  display: inline-block;
+  height: 70px;
+  position: absolute;
+  width: 70px;
+}
+
+#panel {
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.barlifeContainer {
+  height: 30px;
+  margin: 0 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 4rem);
+}
+
+.barlife {
+  height: 100%;
+  width: 100%;
+}
+
+.scoreSection, .aside {
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.scorePanel {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	background: $bgLight;
+	padding: 1rem;
+}
+
+.scorePanelTitle {
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.scorePanelList {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+    text-align: center;
+	}
+}
+
+.glassSphere {
+  background: $bgLightDark;
+  color: $darkpurple;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: .3rem;
+}
+
+.main {
+	display: flex;
+	flex: 3;
+	flex-flow: column nowrap;
+
+	@media (orientation: portrait) {
+		flex: 2;
+	}
+}
+
+.mainHeader{
+	flex: 4;
+	text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.mainActions {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.mainFooter {
+	flex: 1;
+	margin: 0 auto;
+	display: flex;
+  align-items: flex-end;
+	justify-content: center
+}
+
+#play {
+	font-size: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#playAgain {
+  font-size: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+
+.gameover, .warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+
+  &.fade-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.gameover {
+  background: $bgLight;
+}
+
+.warning {
+  background: $bgDark;
+}
+
+.messageContainer {
+  box-shadow: 0px 0px 28px 5px $accent;
+  background: $bgLight;
+  padding: 3rem 4rem;
+
+  * {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+.shadow, 
+.scorePanelTitle , 
+.scorePanelList li, 
+.title, 
+.bigMessage, 
+.smallMessage, 
+.scoreTitle, 
+.scoreResult {
+	text-shadow: 2px 2px 2px $bgDark;
+	color: $darkpurple;
+}
+
+.title {
+  font-size: 7rem;
+  margin: 0;
+}
+
+.bigMessage {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.smallMessage {
+  font-size: 1rem;
+}

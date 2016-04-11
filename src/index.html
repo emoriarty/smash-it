@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>sky</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="pages" class="pt-perspective">
+      <section id="home" class="home">
+        <div class="wrapper">
+          <div class="aside">
+            <div class="scorePanel">
+              <h2 class="scorePanelTitle">High score</h2>
+              <ul class="scorePanelList">
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main">
+            <div class="mainHeader">
+              <h1 class="title">Smash a sprout</h1>
+            </div>
+            <div class="mainActions">
+              <button class="btn purple" id="play">Play now</button>
+            </div>
+            <footer class="mainFooter">
+              <div class="logo"></div>
+            </footer>
+          </div>
+        </div>
+      </section>
+      <section id="game" class="game">
+        <video poster="http://demilked2.uuuploads.com/winter-landscapes/winter-landscapes-20.jpg" muted loop id="bgvid" width="100%" height="100%">
+          <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"></source>
+          <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm"></source>
+          <!--source src="/videos/winter-landscape.mp4" type="video/mp4">
+          <source src="/videos/winter-landscape.webm" type="video/webm"-->
+        </video>
+
+        <div id="warning" class="warning">
+          <div class="messageContainer">
+            <h1 class="bigMessage">Tap the sprouts!</h1>
+          </div>
+        </div>
+
+        <div id="panel">
+          <div class="barlifeContainer">
+            <progress id="barlife" class="barlife" value="100" max="100"></progress>
+          </div>
+          <div id="currentScore"></div>
+        </div>
+
+        <canvas id="canvas"></canvas>
+
+        <div id="gameover" class="gameover">
+          <div class="messageContainer">
+            <p class="smallMessage">Oh no, you ran out of time!</p>
+            <h1 class="bigMessage">Game Over</h1>
+          </div>
+        </div>
+
+      </section>
+      <section id="score" class="score">
+        <div class="wrapper">
+          <div class="aside">
+            <div class="scorePanel">
+              <h2 class="scorePanelTitle">High score</h2>
+              <ul class="scorePanelList">
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+                <li class="glassSphere">0</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main">
+            <div class="mainHeader">
+              <div class="glassSphere"><p class="scoreTitle">Your score</p><p class="scoreResult">0</p></div>
+            </div>
+            <div class="mainActions">
+              <h1 class="bigMessage">Good effort. That was a tough game!</h1>
+              <h1 class="smallMessage">Why not try to beat your score?</h1>
+              <button class="btn purple" id="playAgain">Play again</button>
+            </div>
+            <footer class="mainFooter">
+              <!--div class="logo"></div-->
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/vendor/modernizr-custom.js"></script>
+    <script data-main="scripts/main.js" src="scripts/vendor/require.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>

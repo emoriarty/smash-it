@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "require": false,
+      "define": false,
+      "Modernizr": false,
+      "jQuery": false
+    },
+    "rules": {
+        "no-console": [
+          "warn",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
+          }
+        ],
+        "indent": [
+            "error",
+            2,
+            {
+              "VariableDeclarator": {
+                "var": 2,
+                "let": 2,
+                "const": 2
+              }
+            }
+
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

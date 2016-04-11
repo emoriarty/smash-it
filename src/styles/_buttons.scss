@@ -1,0 +1,20 @@
+.btn {
+	border-radius: 3px;
+	font-size:1.5rem;
+	font-family:arial, helvetica, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-decoration:none;
+	display:inline-block;
+	text-shadow: -1px -1px 0 $bgDark;
+	font-weight:bold; color: #FFFFFF;
+
+
+	&.purple {
+		border:1px solid $darkdeepurple;
+		background-color: $purple;
+	 	background-image: linear-gradient(to bottom, $purple, $deepurple);
+		filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=$purple, endColorstr=$deepurple);
+	}
+
+
+}
