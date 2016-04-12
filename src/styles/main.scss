@@ -32,7 +32,7 @@ button { text-transform: uppercase; }
 }
 
 .logo {
-  background: url('/images/sky-movies-logo.png') no-repeat;
+  background: url('../images/sky-movies-logo.png') no-repeat;
   background-position: center;
   background-size: contain;
   height: 28px;
@@ -95,7 +95,7 @@ canvas#canvas {
 }
 
 .brussel {
-  background: url(/images/brussel_sprout.png) no-repeat;
+  background: url('../images/brussel_sprout.png') no-repeat;
   display: inline-block;
   height: 70px;
   position: absolute;

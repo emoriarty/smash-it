@@ -10,10 +10,10 @@ Also No task runner has been used, only npm scripts.
 Clone the project and once dowloaded do to the folder project and there execute the next command:
 
 ```bash
-$ npm run server
+$ npm run start
 ```
 
-Also you can run the project with `npm run server:prod`, the main difference is all files will be optimized.
+Also you can run the project with `npm run start:prod`, the main difference is all files will be optimized.
 
 If you like to have files watched (scripts and styles) it's better to run :
 

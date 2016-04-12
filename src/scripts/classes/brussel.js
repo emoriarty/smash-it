@@ -5,9 +5,9 @@ define(['classes/lapse'], function(Lapse) {
     this.canvas  = canvas;
     this.context = this.canvas.getContext('2d');
     this.el      = new Image();
-    this.el.src  = '/images/brussel_sprout.png';
+    this.el.src  = document.location.href.split('?') + '/images/brussel_sprout.png';
     this.lapse   = new Lapse(duration);
-    this._scale = 99;
+    this._scale  = 99;
 
     this.el.onload = function() {
       this.width  = this.el.naturalWidth;
