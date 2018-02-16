@@ -1,8 +1,8 @@
 # Smash it
 
 ## Purpose
-This is a demo game where physics have been tested whitout using no framework.
-Also No task runner has been used, only npm scripts.
+This is a demo game where physics have been tested whithout no library
+Also no task runner has been used, only npm scripts.
 
 ## Running the project
 
